@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Any-Nu-lUL">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Assignment5_SamMathew" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="HomePage-BG" translatesAutoresizingMaskIntoConstraints="NO" id="rZO-9t-agF">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hXo-8J-ctb">
+                                <rect key="frame" x="145" y="508" width="103" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Level 2"/>
+                                <connections>
+                                    <segue destination="Oer-II-l3J" kind="show" id="NS9-hU-cAs"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Story Book" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X2h-cU-no6">
+                                <rect key="frame" x="116" y="121" width="160" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="32"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X6E-jz-spy">
+                                <rect key="frame" x="316" y="766" width="50" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                                <connections>
+                                    <segue destination="5W6-Va-Xqq" kind="show" id="SxE-RM-icd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jez-ye-4dz">
+                                <rect key="frame" x="145" y="359" width="103" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Level 1">
+                                    <fontDescription key="titleFontDescription" name="SFPro-Semibold" family="SF Pro" pointSize="16"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="lxX-DT-PJQ" kind="show" id="Ia2-9F-Pnn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rZO-9t-agF" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" multiplier="16:9" id="A0Y-7D-har"/>
+                            <constraint firstItem="rZO-9t-agF" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" multiplier="0.1" constant="-12" id="HZf-q9-COv"/>
+                            <constraint firstItem="rZO-9t-agF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" multiplier="0.1" constant="-4" id="MoO-HJ-hCy"/>
+                            <constraint firstItem="rZO-9t-agF" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottomMargin" multiplier="16:9" id="P02-dR-Nka"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Jm1-PI-2b5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="9.9236641221374047" y="3.5211267605633805"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Mvb-Ly-VoP">
+            <objects>
+                <viewController id="Oer-II-l3J" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wqh-pl-0Nn">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HomePage-BG" translatesAutoresizingMaskIntoConstraints="NO" id="Xc3-xa-lj1">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WhN-aU-whm">
+                                <rect key="frame" x="136" y="399" width="120" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Story 1"/>
+                                <connections>
+                                    <segue destination="TXU-Ha-Qke" kind="show" id="EvC-Ev-ACF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="GWx-uI-Xja"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Xc3-xa-lj1" secondAttribute="bottom" id="9ov-Ll-rX2"/>
+                            <constraint firstItem="Xc3-xa-lj1" firstAttribute="top" secondItem="wqh-pl-0Nn" secondAttribute="top" id="VvW-tH-h6i"/>
+                            <constraint firstAttribute="trailing" secondItem="Xc3-xa-lj1" secondAttribute="trailing" id="hih-88-cLk"/>
+                            <constraint firstItem="Xc3-xa-lj1" firstAttribute="leading" secondItem="wqh-pl-0Nn" secondAttribute="leading" id="tg1-RE-zkb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ttw-a1-lfx"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oNc-Fz-T3f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="965.64885496183206" y="404.92957746478874"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="OdT-tf-sNF">
+            <objects>
+                <navigationController id="Any-Nu-lUL" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Lo3-j6-0Vw">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="e22-Eo-Wlc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4vi-qI-h7v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-845" y="4"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Ocr-EI-3Ci">
+            <objects>
+                <viewController id="lxX-DT-PJQ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qBl-pV-KgX">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HomePage-BG" translatesAutoresizingMaskIntoConstraints="NO" id="Wnl-zu-Cf5">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hk1-1E-81a">
+                                <rect key="frame" x="139" y="248" width="115" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Story 1"/>
+                                <connections>
+                                    <segue destination="qPj-oE-wL9" kind="show" id="p2Q-43-EqV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g5R-Ah-ns5">
+                                <rect key="frame" x="139" y="378" width="115" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Story 2"/>
+                                <connections>
+                                    <segue destination="uQL-In-wcf" kind="show" id="qwD-qR-Qfl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vqB-wc-J3e"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Wnl-zu-Cf5" secondAttribute="trailing" id="K5h-QD-Y4i"/>
+                            <constraint firstItem="Wnl-zu-Cf5" firstAttribute="leading" secondItem="qBl-pV-KgX" secondAttribute="leading" id="Vw8-KW-rWS"/>
+                            <constraint firstAttribute="bottom" secondItem="Wnl-zu-Cf5" secondAttribute="bottom" id="gFo-iF-KZA"/>
+                            <constraint firstItem="Wnl-zu-Cf5" firstAttribute="top" secondItem="qBl-pV-KgX" secondAttribute="top" id="qYp-mg-2XO"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="v1E-xk-s2r"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E0k-2J-Bdx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="965.64885496183206" y="-385.21126760563385"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="XLi-cA-5Cd">
+            <objects>
+                <viewController id="uQL-In-wcf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GT2-cj-epg">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Story02-BG" translatesAutoresizingMaskIntoConstraints="NO" id="Wko-fZ-bsn">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lily's Magical Kite Adventure" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eVG-8T-o41">
+                                <rect key="frame" x="40" y="124" width="313" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="jPP-sM-wyy">
+                                <rect key="frame" x="16" y="185" width="361" height="496"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <mutableString key="text">Lily, a cheerful girl, loved her colorful kite named Rainbow. One sunny morning, while flying Rainbow at the park, a strong gust of wind carried it away. Lily chased her kite through fields and into a forest, where she met friendly animals. An owl offered advice, a squirrel guided her, and a bunny shared a snack.
+
+With their help, Lily found Rainbow in a big meadow, patiently waiting. She hugged her kite and thanked her animal friends. On the way back, they shared their adventure with loved ones, who clapped and cheered.
+
+Lily learned that her kite was magical because it led her to new friends and exciting journeys. Every time they flew together, they remembered their extraordinary adventure.</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ISV-uU-KTK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Wko-fZ-bsn" secondAttribute="bottom" id="Uux-ds-nq6"/>
+                            <constraint firstItem="Wko-fZ-bsn" firstAttribute="leading" secondItem="GT2-cj-epg" secondAttribute="leading" id="hXn-Ob-4EI"/>
+                            <constraint firstAttribute="trailing" secondItem="Wko-fZ-bsn" secondAttribute="trailing" id="p8h-fA-MwZ"/>
+                            <constraint firstItem="Wko-fZ-bsn" firstAttribute="top" secondItem="GT2-cj-epg" secondAttribute="top" id="x9Q-gJ-yiV"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="3LG-lF-Qiv"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E1A-6q-pdE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2168.7022900763359" y="-385.21126760563385"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="x2a-bS-rIf">
+            <objects>
+                <viewController id="qPj-oE-wL9" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UJg-cW-a0U">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Story-BG" translatesAutoresizingMaskIntoConstraints="NO" id="RIg-0k-MxK">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i7L-fF-Fhy">
+                                <rect key="frame" x="133" y="729" width="126" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Next Page"/>
+                                <connections>
+                                    <segue destination="XVR-F0-SF7" kind="show" id="TSE-Pk-ebp"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The Little Caterpillar's Big Adventure" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SrG-Nx-HXI">
+                                <rect key="frame" x="28" y="117" width="336" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="7RX-jN-jSl">
+                                <rect key="frame" x="16" y="172" width="361" height="520"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <mutableString key="text">Once upon a time, in a lush and colorful garden, there lived a little caterpillar named Carl. Carl was a tiny, fuzzy caterpillar with bright green stripes on his back. He loved to explore and eat leaves all day long.
+
+One sunny morning, as Carl was munching on a tasty green leaf, he heard a soft rustling sound from above. He looked up and saw a beautiful butterfly fluttering by. The butterfly had vibrant wings with all the colors of the rainbow.
+
+Carl looked at his own tiny body and thought, "I want to be as beautiful as that butterfly!"
+
+He decided to go on an adventure to become a butterfly. With determination, Carl began to spin a tiny cocoon around himself. He wrapped and wrapped until he was snug and cozy inside. Then he fell into a deep sleep.
+
+Weeks passed, and Carl's little cocoon swayed gently in the breeze. The garden changed, and the seasons came and went. Winter turned to spring, and spring turned to summer.
+
+One sunny day, the cocoon began to wiggle and shake. It cracked open, and out popped a transformed Carl. He wasn't a tiny caterpillar anymore – he was a beautiful butterfly, just like the one he had admired!</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="TTl-TF-kmf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="RIg-0k-MxK" secondAttribute="bottom" id="B1w-rd-WzL"/>
+                            <constraint firstItem="RIg-0k-MxK" firstAttribute="leading" secondItem="UJg-cW-a0U" secondAttribute="leading" id="OfO-zY-vAt"/>
+                            <constraint firstAttribute="trailing" secondItem="RIg-0k-MxK" secondAttribute="trailing" id="SIy-C4-PYj"/>
+                            <constraint firstItem="RIg-0k-MxK" firstAttribute="top" secondItem="UJg-cW-a0U" secondAttribute="top" id="gl0-rT-ZXC"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="rUE-tv-KIx"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zfr-lO-WXJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2168.7022900763359" y="-1135.2112676056338"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Zvm-f5-9Rj">
+            <objects>
+                <viewController id="XVR-F0-SF7" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7qB-pI-nya">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Story-BG" translatesAutoresizingMaskIntoConstraints="NO" id="GcN-z5-BWJ">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="3hk-n4-hXC">
+                                <rect key="frame" x="16" y="119" width="361" height="518"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <mutableString key="text">Carl spread his colorful wings and took flight for the very first time. He soared through the garden, visiting flowers and sharing his joy with all his friends. The bees, ladybugs, and birds all cheered for Carl's incredible transformation.
+
+Now, Carl was not only beautiful on the outside but also on the inside. He learned that growing up and changing could be a wonderful adventure. And so, he spent the rest of his days fluttering from flower to flower, teaching other little caterpillars about the magic of change and the beauty of being yourself.
+
+And that's the story of Carl, the little caterpillar who became a butterfly, and how he learned that we're all special in our own way, just as we are.</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Jbl-wr-lTK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="GcN-z5-BWJ" secondAttribute="bottom" id="23b-9u-pGO"/>
+                            <constraint firstItem="GcN-z5-BWJ" firstAttribute="leading" secondItem="7qB-pI-nya" secondAttribute="leading" id="i4E-vK-83G"/>
+                            <constraint firstAttribute="trailing" secondItem="GcN-z5-BWJ" secondAttribute="trailing" id="r5R-01-QCB"/>
+                            <constraint firstItem="GcN-z5-BWJ" firstAttribute="top" secondItem="7qB-pI-nya" secondAttribute="top" id="xrb-PZ-ZzJ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Dbg-ls-fqW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NKz-T3-yMW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3325.9541984732823" y="-1135.2112676056338"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="aWu-fs-pDn">
+            <objects>
+                <viewController id="TXU-Ha-Qke" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iXh-rz-AQg">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Story03-BG" translatesAutoresizingMaskIntoConstraints="NO" id="XgB-QT-9fY">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="The Curious Case of Benny and the Talking Tree" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXC-Fx-EFQ">
+                                <rect key="frame" x="32" y="113" width="331" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="4u1-an-0xp">
+                                <rect key="frame" x="16" y="204" width="361" height="503"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <mutableString key="text">In a small village nestled in the heart of a lush forest, there lived a curious boy named Benny. Benny had always been fascinated by nature, but his favorite spot in the entire forest was beneath an ancient oak tree.
+
+One sunny morning, Benny was sitting beneath the tree, reading his favorite book. To his surprise, he heard a soft, friendly voice coming from above. "Hello, young traveler! What adventures have you embarked on today?"
+
+Benny looked up, his eyes widening in astonishment. It was the tree that was talking to him! "I'm Benny, and I'm reading a book about far-off lands," he replied.
+
+The wise old tree introduced itself as Oakly and shared its knowledge about the forest and the creatures that lived there. Oakly told Benny stories about the forest's history, the animals, and the secrets it held.
+
+Over time, Benny and Oakly became the best of friends. Benny visited the talking tree every day, and they chatted about everything under the sun. Benny learned about the balance of nature, the importance of taking care of the environment, and how every living thing played a role in the forest's delicate ecosystem.
+</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yk2-SC-7ds">
+                                <rect key="frame" x="124" y="728" width="144" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Next Page"/>
+                                <connections>
+                                    <segue destination="Hpo-a5-bu7" kind="show" id="2tl-tH-Y8J"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4nQ-l4-2Xh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="XgB-QT-9fY" firstAttribute="top" secondItem="iXh-rz-AQg" secondAttribute="top" id="FaA-K6-N3V"/>
+                            <constraint firstAttribute="bottom" secondItem="XgB-QT-9fY" secondAttribute="bottom" id="P2T-gK-i2V"/>
+                            <constraint firstItem="XgB-QT-9fY" firstAttribute="leading" secondItem="iXh-rz-AQg" secondAttribute="leading" id="hYT-Xj-bfw"/>
+                            <constraint firstAttribute="trailing" secondItem="XgB-QT-9fY" secondAttribute="trailing" id="wbx-BM-hpl"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="zV4-nw-sfJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y9H-da-l3B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2168.7022900763359" y="404.92957746478874"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="mp6-8n-4ei">
+            <objects>
+                <viewController id="Hpo-a5-bu7" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AOc-b4-IHh">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Story03-BG" translatesAutoresizingMaskIntoConstraints="NO" id="t1f-0Q-oWD">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="WIx-O8-IRg">
+                                <rect key="frame" x="16" y="124" width="361" height="549"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Benny shared his newfound wisdom with the villagers, and they began to appreciate and protect the forest even more. Oakly was happy to know that Benny was helping to preserve their beloved home.
+
+Years passed, and Benny continued to visit Oakly, even as he grew older. He always felt grateful for the extraordinary friendship he had with a talking tree. Benny's love for the forest and its enchanting mysteries stayed with him throughout his life, thanks to his dear friend, Oakly, the talking tree.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="JLL-mm-hdY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="t1f-0Q-oWD" secondAttribute="trailing" id="X6N-32-X89"/>
+                            <constraint firstItem="t1f-0Q-oWD" firstAttribute="leading" secondItem="AOc-b4-IHh" secondAttribute="leading" id="cOG-tT-Osj"/>
+                            <constraint firstAttribute="bottom" secondItem="t1f-0Q-oWD" secondAttribute="bottom" id="kga-9P-l6H"/>
+                            <constraint firstItem="t1f-0Q-oWD" firstAttribute="top" secondItem="AOc-b4-IHh" secondAttribute="top" id="lTN-kC-D5E"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="VL0-Nm-hXJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tYD-hI-1y7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3327.480916030534" y="404.92957746478874"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="yib-Xo-6ZL">
+            <objects>
+                <viewController id="5W6-Va-Xqq" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qYT-AQ-Kc0">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HomePage-BG" translatesAutoresizingMaskIntoConstraints="NO" id="txC-Sg-hDS">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wzW-1z-w2e">
+                                <rect key="frame" x="59" y="387" width="274" height="99"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Level 2:
+This level shows stories for children aged between 6 and 10.</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ydL-3d-7CD">
+                                <rect key="frame" x="59" y="245" width="274" height="99"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Level 1:
+This level shows stories for children aged between 3 and 5.</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ZYf-zS-E3w"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="txC-Sg-hDS" firstAttribute="leading" secondItem="qYT-AQ-Kc0" secondAttribute="leading" id="14v-yl-QaT"/>
+                            <constraint firstAttribute="trailing" secondItem="txC-Sg-hDS" secondAttribute="trailing" id="BYq-pk-YVu"/>
+                            <constraint firstItem="txC-Sg-hDS" firstAttribute="top" secondItem="qYT-AQ-Kc0" secondAttribute="top" id="RWF-L3-MIz"/>
+                            <constraint firstAttribute="bottom" secondItem="txC-Sg-hDS" secondAttribute="bottom" id="zhG-ky-Qwe"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="6oX-Qv-urP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WXg-ph-4pN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="9.9236641221374047" y="797.88732394366207"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="HomePage-BG" width="393" height="852"/>
+        <image name="Story-BG" width="393" height="852"/>
+        <image name="Story02-BG" width="393" height="852"/>
+        <image name="Story03-BG" width="393" height="852"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
